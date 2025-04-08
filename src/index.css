@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* FOG EFFECT STYLES */
+@keyframes fogMove {
+  0% {
+    transform: translate3d(-200px, 0, 0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate3d(200px, 0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate3d(-200px, 0, 0);
+    opacity: 0.3;
+  }
+}
+
+.fog {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.fog1 {
+  animation: fogMove 60s linear infinite;
+}
+
+.fog2 {
+  animation: fogMove 90s linear infinite;
+  animation-delay: 15s;
+  opacity: 0.3;
+}
