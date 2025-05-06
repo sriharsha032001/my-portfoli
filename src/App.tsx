@@ -6,12 +6,18 @@ function App() {
 
   const skills = [
     { category: "Frontend", items: ["React", "Tailwind CSS", "HTML"] },
-    { category: "Backend", items: ["Java", "SQL", "SpringBoot", "RestAPI"] },
+    { category: "Backend", items: ["Java", "SQL", "SpringBoot", "RestAPI","NodeJS"] },
     { category: "Tools", items: ["Git", "Docker", "AWS", "Kubernetes", "Jenkins"] },
-    { category: "Testing", items: ["Postman", "JIRA", "Selenium Web Driver", "Manual Testing", "Functional Testing"] }
+    { category: "Testing", items: ["Postman", "JIRA", "Selenium Web Driver", "Manual Testing", "Functional Testing","Regression Testing"] }
   ];
 
   const experiences = [
+    {
+      company: "Freelancer",
+      role: "Software Development Engineer",
+      period: "Jan 2025 - Present",
+      description: "As a Full-Stack Developer Intern, I worked on building and enhancing web applications using Spring Boot for the backend and ReactJS for the frontend..."
+    },
     {
       company: "Cognizant Technology Solutions",
       role: "Programmer Analyst",
@@ -29,12 +35,17 @@ function App() {
   const projects = [
     {
       name: "Expense Tracker",
-      description: "Built a Expense Tracker App with React, SpringBoot and MongoDB",
-      link: "https://github.com/sriharsha032001/my-portfoli"
+      description: "I built a full-stack Expense Tracker App using React, Spring Boot, and MongoDB. The app allows users to upload bank statements, automatically extract transactions, and view summaries with interactive charts. It features secure login with JWT, dynamic dashboards, and PDF export functionality. The frontend is styled with Tailwind CSS, and the backend is designed to handle complex data formats. This project showcases my ability to integrate frontend and backend technologies to solve real-world problems.",
+      link: "https://github.com/sriharsha032001/expense-tracker.git"
+    },
+    {
+      name: "Freelance - The Greekgod Squad",
+      description: "I developed the Greek God Squad website as a modern, visually appealing platform for a fitness-focused brand. Built with React , NodeJS and Tailwind CSS, the site features a sleek black-and-white design with pages like Welcome, Achievements, Recent Clients, and Contact. It includes animations, a responsive layout, and an Ebooks section integrated with Razorpay for payments. The frontend is hosted on Cloudflare Pages, and the backend is deployed via Railway. This project reflects my skills in UI/UX, frontend development, and payment integration.",
+      link: "https://greekgod.online/"
     },
     {
       name: "PayPal Global Produced Services",
-      description: "Developed APIs as an employee of Cognizant"
+      description: "At Cognizant, I developed and maintained RESTful APIs using Spring Boot for enterprise applications. I worked extensively with AWS services for deployment and monitoring, and used Postman for API testing and validation. My role included writing unit and regression test cases, ensuring 95%+ test coverage and minimal post-deployment issues. Collaborated with cross-functional teams to deliver features on time and supported multiple production releases. This experience strengthened my backend skills and understanding of scalable cloud architectures."
     }
   ];
 
@@ -92,7 +103,7 @@ function App() {
               <span className="text-gray-400">Ravinuthala Ramachandra Sri Harsha</span>
             </h1>
             <p className="text-xl text-gray-400 mb-8">
-              Software Engineer passionate about creating impactful web experiences
+            Software Engineer passionate about creating impactful web experiences. Skilled in building responsive, user-focused applications using modern web technologies to deliver seamless digital solutions.
             </p>
             <div className="flex space-x-4">
               <a href="https://github.com/sriharsha032001" className="p-2 hover:bg-gray-900 rounded-full transition-colors">
@@ -121,7 +132,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8">About Me</h2>
           <p className="text-gray-400 text-lg leading-relaxed max-w-3xl">
-            I'm a Software Engineer with over 2 years of experience in building web applications...
+          I'm a Software Engineer with over 3 years of experience in building responsive and scalable web applications. I specialize in crafting intuitive user interfaces using React and integrating robust backend services with Spring Boot. Passionate about delivering clean, efficient code and creating web experiences that make a real impact.
           </p>
         </div>
       </section>
