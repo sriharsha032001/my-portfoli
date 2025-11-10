@@ -1,0 +1,193 @@
+# Cursor prompt (copy-paste ready)
+
+**Goal:** Build a stunning, “next-level” developer portfolio website (Next.js + Tailwind) that presents the candidate’s resume, projects, achievements and contact information with exceptional UX, accessibility, performance and modern micro-interactions. Produce a production-ready single-repo scaffold (Next.js + Tailwind), full page content, component list, sample code snippets, deployment steps (Vercel), SEO/structured data, and a downloadable PDF resume. Visual style: modern, minimal, high-contrast, edge polish (subtle motion, glass/neumorphism accents, microinteractions). Provide both a one-page scrolling landing layout and a multi-page option (Home / About / Experience / Projects / Contact / Resume). Include fully written copy to paste — use the exact content below for sections.
+
+---
+
+## REQUIRED CONTENT (use exactly as provided)
+
+**Name / Contact**
+Ravinuthala Ramachandra Sri Harsha
+[ramachandrasriharsha1@gmail.com](mailto:ramachandrasriharsha1@gmail.com) | 8497906821 | LinkedIn | [https://sriharsha032001.github.io/my-portfoli/](https://sriharsha032001.github.io/my-portfoli/)
+
+**Education**
+K L University, Vaddeswaram — Bachelore of Technology - Computer Science and Engineering; CGPA: 8.0  |  June 2018 - May 2022
+
+**Experience**
+**Software Engineer - 1** — Bengaluru | July 2025 - Present
+*Company:* Code Vyasa, Client: Groww
+
+* Revamped allocation module by separating commodities from the legacy system, implementing 20+ new computational formulas, and restructuring 10+ database tables, improving data integrity and allocation accuracy by 25%.
+* Integrated Kafka-based event streaming for real-time payment status updates and asynchronous fund flow processing, improving payment reliability and reducing latency by 35%.
+* Analyzed and improved payment architecture, resolving 15+ backlog issues and improving end-to-end payment flow visibility by 30%.
+* Delivered 5+ SOSS enhancements and fixed compliance gaps in UPI processing, ensuring 100% adherence to regulatory standards and smoother payment settlements.
+
+**Programmer Analyst** — Hyderabad | April 2024 – OCT 2024
+*Cognizant Technology Solutions, Client: Wells Fargo*
+
+* Developed an internal audio management tool for compliance teams to retrieve and analyze call recordings from AWS S3 buckets.
+* Designed backend logic to fetch, map, and merge audio file metadata with customer and transaction data via Spring Boot microservices.
+* Built lightweight React components for the admin dashboard to visualize customer transaction data.
+
+**Programmer Analyst** — Hyderabad | Jul 2022 – March 2024
+*Cognizant Technology Solutions, Client: PayPal*
+
+* Optimized Spring Boot microservices for INR and multi-currency payment flows, improving transaction accuracy and settlement tracking by 30%.
+* Implemented API Gateway routing and pooling mechanisms to monitor real-time payment confirmations, enhancing system reliability and reducing reconciliation delays by 25%.
+* Documented and integrated RESTful APIs using Swagger, accelerating backend onboarding and service discoverability.
+
+**Programmer Analyst Intern** — Hyderabad | Jan 2022 – Jun 2022
+*Cognizant Technology Solutions*
+
+* Completed full stack Java development training (Core Java, Spring Boot microservices, ReactJS, SQL).
+* Deployed integrated React–Spring Boot applications with secure REST APIs (JWT) and Redux state management.
+
+**Projects**
+**UberLite (System Design Focus)** | Spring Boot, Kafka, Redis
+
+* Architected a scalable ride-booking platform modeled after Uber, with modular microservice design, fault tolerance, horizontal scalability. Applied LLD patterns (Strategy, Decorator, State, Observer).
+  Git: [https://github.com/sriharsha032001/uber-lite](https://github.com/sriharsha032001/uber-lite)
+
+**AIrena** | Spring Boot, JSON, ReactJS, VSCode (airena.in)
+
+* Built AIrena, an AI agent automation hub integrating Next.js frontend and backend, enabling multi-step AI workflows. Used Cursor, ChatGPT, Gemini LLMs to accelerate development.
+
+**Freelance** | ReactJS, Node.JS, RazorPay Integration (greekgod.online)
+
+* Built scalable ReactJS web apps with Redux, SSR/CSR/SSG strategies and NodeJS APIs; improved page load speeds by 60% and maintained 90+ Core Web Vitals.
+* Built static site with Razorpay integration for Ebook sales, ensuring secure payments and 99.9% uptime.
+
+**Technical Skills**
+Core Concepts: Data Structures & Algorithms, OOP, System Design, HLD, LLD, Microservices
+Languages: C, Java, JavaScript
+DB: MySQL, PostgreSQL, Supabase
+Frameworks: Spring Boot, ReactJS
+Tools: Jenkins, Terraform, Git, AWS, RESTful Web Services, JUnit, Selenium, Swagger, Docker, Kubernetes, n8n
+Deployments / Agents: Vercel, GitHub Pages, GoDaddy, AWS, N8n, Gemini gem
+
+**Certifications / Achievements**
+
+* AWS Certified Developer - Associate (DVA-C02)
+* Achieved 5,000+ users on the GreekGodSquad website by optimizing performance and ensuring high availability.
+* Earned ₹2,00,000 revenue for clients by delivering high-quality web solutions.
+
+---
+
+## DELIVERABLES (what Cursor must output)
+
+1. A ready-to-clone Git repo scaffold (Next.js + Tailwind) with components and pages described below. Include package.json, tailwind.config.js, next.config.js, and sample .env.example for contact form and analytics keys.
+2. Fully written page content (HTML/JSX-ready) using the exact text in **REQUIRED CONTENT**. Provide both raw text blocks and sample React components that render them.
+3. Visual design system: color palette, typography (system + Google fonts), spacing scale, and Tailwind utility classes to use. Create light and dark modes; suggest a high-contrast “signature” accent color.
+4. Component list & props: Hero, Nav (sticky, hide-on-scroll), ExperienceTimeline (interactive), ProjectsGrid (filterable), SkillsCloud, CertificationsBadgeRow, ContactForm (serverless submit), ResumeDownload, Footer.
+5. Microinteraction & animation plan (Framer Motion + Tailwind utilities) with exact code snippets for: animated hero heading, hover card lift, timeline enter animations, skeleton loaders, and smooth scroll.
+6. Accessibility checklist & ARIA roles for all interactive components.
+7. SEO & structured data: head tags, Open Graph, Twitter cards, JSON-LD for Person + Resume.
+8. Performance plan: image optimization, fonts strategy, preconnect, critical CSS, Lighthouse targets & suggested audits.
+9. Deployment steps: Vercel recommended config + one-click deploy, GitHub Pages fallback instructions, environment variables.
+10. A downloadable PDF resume generator route (serverless) that returns a high-quality PDF version of the content.
+11. Testing & CI: sample GitHub Actions workflow that runs lint, typecheck (if TS), and deploys to Vercel.
+12. A short development README and a “Design Rationale” section explaining UX decisions.
+
+---
+
+## DESIGN DIRECTION (visual + interaction)
+
+* **Overall feel:** Minimal, professional, slightly cinematic. Big typographic hero, plenty of white space, subtle depth.
+* **Layout:** Split-hero (left: intro + CTAs, right: snapshot card with key stats), sticky nav, experience timeline with vertical line and animated cards, projects grid with live filters and repo links.
+* **Motion:** Use subtle easing, 200–600ms durations. Use Framer Motion for entrance and hover. Avoid heavy parallax on mobile.
+* **Colors & Type:** Neutral base (near-white / charcoal) + a vivid accent (e.g., electric cyan or warm gold) for CTAs. Sans-serif headline + monospaced code font for project cards.
+* **Accessibility:** 4.5:1 contrast for body text; all buttons keyboard-focusable; skip-to-content link.
+
+---
+
+## EXACT IMPLEMENTATION NOTES / SNIPPETS (examples)
+
+**File structure**
+
+```
+/src
+  /components
+    Hero.tsx
+    Nav.tsx
+    ExperienceTimeline.tsx
+    ProjectCard.tsx
+    SkillsCloud.tsx
+    ContactForm.tsx
+  /pages
+    index.tsx
+    projects.tsx
+    resume.pdf.ts (serverless PDF generator)
+    api/contact.ts
+  /styles
+    globals.css
+tailwind.config.js
+next.config.js
+```
+
+**Hero sample JSX (paste-ready)**
+
+```jsx
+export default function Hero(){ 
+  return (
+    <section className="min-h-screen flex items-center">
+      <div className="max-w-3xl">
+        <h1 className="text-5xl font-extrabold leading-tight">
+          Ravinuthala Ramachandra Sri Harsha
+        </h1>
+        <p className="mt-4 text-lg">Software Engineer — payments, microservices, and scalable web systems.</p>
+        <div className="mt-6 flex gap-4">
+          <a href="#projects" className="btn-primary">View Projects</a>
+          <a href="/resume.pdf" className="btn-ghost">Download Resume</a>
+        </div>
+      </div>
+      <div className="ml-auto hidden md:block w-96">
+        {/* snapshot card: contact + top skills + stats */}
+      </div>
+    </section>
+  )
+}
+```
+
+**ExperienceTimeline:**
+
+* Implement keyboard accessible vertical timeline. Each experience item opens an accordion with responsibilities and impact metrics.
+
+**SEO JSON-LD (Person + Resume snippet)** — Cursor should generate final JSON-LD using the provided content.
+
+---
+
+## QA / REVIEW CHECKLIST (deliver with PR)
+
+* All text exactly matches the **REQUIRED CONTENT**.
+* Mobile first: Test at 320px / 375px / 768px / 1024px.
+* Lighthouse: Performance ≥90, Accessibility ≥90, Best Practices ≥90, SEO ≥90 (aim).
+* Contact form successful POST to `/api/contact` and sends email or logs to configured provider.
+* Resume PDF matches visual styling and includes metadata (author, title).
+
+---
+
+## Extra asks for Cursor (what to return)
+
+* A zip-ready repository or GitHub repo link with everything scaffolded.
+* A short “how to iterate” list so the user can quickly adjust palette, fonts, and hero text.
+* A single-page mockup image (Figma-like layout) or a clear component markup for a designer to use.
+
+---
+
+# Step-by-step explanation (how I composed this prompt)
+
+1. **Captured the goal** — The user asked for a prompt to include all resume content and make the design “next level.” I started by translating that into an actionable product goal: a Next.js + Tailwind portfolio with production readiness.
+2. **Extracted exact content** — I copied the user’s resume verbatim into the **REQUIRED CONTENT** block so Cursor can paste exact text into pages/components without guessing.
+3. **Specified deliverables** — I listed concrete outputs Cursor must produce (repo scaffold, components, SEO, PDF generator, deployment scripts). This transforms a vague “design” ask into implementable artifacts.
+4. **Design & UX decisions** — I gave a clear visual direction and UX patterns (hero, timeline, microinteractions) so Cursor can propose a polished UI rather than a boilerplate.
+5. **Implementation guidance** — I included file structure and code snippets to reduce ambiguity and speed up development.
+6. **QA and deployment** — I added testing, accessibility, Lighthouse targets and deploy steps to ensure production quality.
+7. **Extras & iteration** — I requested zip/Git output and iteration notes so user can continue tweaking.
+
+# Alternative approaches you might prefer
+
+* **Black & White minimalist theme:** Strict monochrome with accent via motion only. Great for judges who prefer print-like resumes. (If you want this, I can convert the prompt to enforce black & white styling.)
+* **Interactive data CV:** Add interactive charts (skills by proficiency, timelines) and small animations showing impact metrics. Useful for data-heavy roles.
+* **One-page static HTML/CSS export:** If you prefer maximum portability (host anywhere) — generate a single static HTML, CSS, JS bundle instead of Next.js.
+* **Designer-first output:** Produce Figma (or Figma-style JSON) mockups and a pixel-perfect spec rather than code scaffolding — better if you want a designer to polish visuals before dev.
+
